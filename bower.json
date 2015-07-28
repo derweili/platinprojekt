@@ -1,0 +1,19 @@
+{
+  "name": "platinprojekt",
+  "version": "0.0.0",
+  "authors": [
+    "julian-weiland"
+  ],
+  "description": "Website for Platin Projekt",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vide": "~0.3.5"
+  }
+}

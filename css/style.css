@@ -1,0 +1,7 @@
+html, body {
+  margin: 0;
+}
+.divider{
+    background: rgba(0,0,0,0.9);
+    height: 20vh;
+}

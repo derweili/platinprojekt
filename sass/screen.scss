@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+html, body {
+  margin: 0;
+  font-family: 'Open Sans', Arial;
+}
+.divider{
+    background: #1a1a1a;
+    height: 20vh;
+}
+
+
+.topnav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    //background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    li{
+    	display: inline;
+    	list-style: none;
+    	text-align: center;
+   		font-weight: 700;
+   		padding: 0 0.5rem;
+    	a{
+    		color: white;
+    		text-decoration: none;
+    	}
+    }
+}
+
+
+
+h2 {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  margin: 0;
+}
+
+.row{
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.veranstaltungen{
+    background: #1a1a1a;
+    padding: 70px 0;
+    *{
+    	color: white;
+    }
+
+	table *{
+		border: none;
+	}
+	table{
+		margin-top: 20px;
+		width: 100%;
+		th{
+			font-weight: bold;
+		}
+		th, td{
+			padding: 10px;
+		}
+	}
+
+}
