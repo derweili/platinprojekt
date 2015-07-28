@@ -64,7 +64,9 @@ h2 {
     }
 
 	table *{
+    text-transform: uppercase;
 		border: none;
+    font-size: 14px;
 	}
 	table{
 		margin-top: 20px;
@@ -77,4 +79,10 @@ h2 {
 		}
 	}
 
+}
+
+
+.members{
+  height: 100vh;
+  background-image: url(../assets/img/fabi.jpg);
 }

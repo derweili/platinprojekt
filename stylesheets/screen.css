@@ -133,18 +133,26 @@ h2 {
 }
 /* line 66, ../sass/screen.scss */
 .veranstaltungen table * {
+  text-transform: uppercase;
   border: none;
+  font-size: 14px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .veranstaltungen table {
   margin-top: 20px;
   width: 100%;
 }
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .veranstaltungen table th {
   font-weight: bold;
 }
-/* line 75, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .veranstaltungen table th, .veranstaltungen table td {
   padding: 10px;
+}
+
+/* line 85, ../sass/screen.scss */
+.members {
+  height: 100vh;
+  background-image: url(../assets/img/fabi.jpg);
 }
