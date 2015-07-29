@@ -28,8 +28,8 @@ html, body {
     	display: inline;
     	list-style: none;
     	text-align: center;
-   		font-weight: 700;
-   		padding: 0 0.5rem;
+   		font-weight: normal;
+   		padding: 0 2rem;
     	a{
     		color: white;
     		text-decoration: none;
@@ -39,21 +39,16 @@ html, body {
 
 
 
-h2 {
-  font-size: 18px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: center;
-  margin: 0;
-}
 
-.row{
+
+.pure-g{
 	width: 95%;
 	max-width: 1000px;
 	margin: 0 auto;
+  overflow: hidden;
+}
+.pure-g > *{
+  float: left;
 }
 
 .veranstaltungen{
@@ -62,6 +57,16 @@ h2 {
     *{
     	color: white;
     }
+    h2 {
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: center;
+    margin: 0;
+  }
 
 	table *{
     text-transform: uppercase;
@@ -77,12 +82,62 @@ h2 {
 		th, td{
 			padding: 10px;
 		}
+    
 	}
-
+  .pastevent{
+    opacity: 0.6;
+    td{
+      text-decoration: line-through;
+    }
+  }
 }
 
 
-.members{
-  height: 100vh;
+#members{
+  height: 60vh;
+  padding: 20vh 0;
+  background-size: cover;
+  -webkit-transition: background-image 0.7s ease-in-out;
+  transition: background-image 0.7ss ease-in-out;
+  .pure-g{
+    max-width: 800px;
+  }
+}
+
+#members.fabi{
   background-image: url(../assets/img/fabi.jpg);
+}
+#members.hessi{
+  background-image: url(../assets/img/hessi.jpg);
+}
+#members.maren{
+  background-image: url(../assets/img/maren.jpg);
+}
+#members.weili{
+  background-image: url(../assets/img/weili.jpg);
+}
+
+.memberslist{
+  font-size: 1rem;
+  line-height: 1em;
+  color: white;
+  li{
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .role{
+    font-size: 10px;
+    color: rgba(255,255,255,0.7);
+    display: block;
+    opacity: 0;
+    -moz-transition: 0.7s all;
+  }
+  li:hover .role{
+    opacity: 1;
+  }
+}
+
+.memberdescription{
+  color: white;
+  text-align: left;
 }

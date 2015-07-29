@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -94,8 +94,8 @@ html, body {
   display: inline;
   list-style: none;
   text-align: center;
-  font-weight: 700;
-  padding: 0 0.5rem;
+  font-weight: normal;
+  padding: 0 2rem;
 }
 /* line 33, ../sass/screen.scss */
 .topnav li a {
@@ -103,8 +103,30 @@ html, body {
   text-decoration: none;
 }
 
-/* line 42, ../sass/screen.scss */
-h2 {
+/* line 44, ../sass/screen.scss */
+.pure-g {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 50, ../sass/screen.scss */
+.pure-g > * {
+  float: left;
+}
+
+/* line 54, ../sass/screen.scss */
+.veranstaltungen {
+  background: #1a1a1a;
+  padding: 70px 0;
+}
+/* line 57, ../sass/screen.scss */
+.veranstaltungen * {
+  color: white;
+}
+/* line 60, ../sass/screen.scss */
+.veranstaltungen h2 {
   font-size: 18px;
   font-family: "Open Sans";
   color: white;
@@ -114,45 +136,93 @@ h2 {
   text-align: center;
   margin: 0;
 }
-
-/* line 53, ../sass/screen.scss */
-.row {
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* line 59, ../sass/screen.scss */
-.veranstaltungen {
-  background: #1a1a1a;
-  padding: 70px 0;
-}
-/* line 62, ../sass/screen.scss */
-.veranstaltungen * {
-  color: white;
-}
-/* line 66, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .veranstaltungen table * {
   text-transform: uppercase;
   border: none;
   font-size: 14px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .veranstaltungen table {
   margin-top: 20px;
   width: 100%;
 }
-/* line 74, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .veranstaltungen table th {
   font-weight: bold;
 }
-/* line 77, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .veranstaltungen table th, .veranstaltungen table td {
   padding: 10px;
 }
+/* line 87, ../sass/screen.scss */
+.veranstaltungen .pastevent {
+  opacity: 0.6;
+}
+/* line 89, ../sass/screen.scss */
+.veranstaltungen .pastevent td {
+  text-decoration: line-through;
+}
 
-/* line 85, ../sass/screen.scss */
-.members {
-  height: 100vh;
+/* line 96, ../sass/screen.scss */
+#members {
+  height: 60vh;
+  padding: 20vh 0;
+  background-size: cover;
+  -webkit-transition: background-image 0.7s ease-in-out;
+  transition: background-image 0.7ss ease-in-out;
+}
+/* line 102, ../sass/screen.scss */
+#members .pure-g {
+  max-width: 800px;
+}
+
+/* line 107, ../sass/screen.scss */
+#members.fabi {
   background-image: url(../assets/img/fabi.jpg);
+}
+
+/* line 110, ../sass/screen.scss */
+#members.hessi {
+  background-image: url(../assets/img/hessi.jpg);
+}
+
+/* line 113, ../sass/screen.scss */
+#members.maren {
+  background-image: url(../assets/img/maren.jpg);
+}
+
+/* line 116, ../sass/screen.scss */
+#members.weili {
+  background-image: url(../assets/img/weili.jpg);
+}
+
+/* line 120, ../sass/screen.scss */
+.memberslist {
+  font-size: 1rem;
+  line-height: 1em;
+  color: white;
+}
+/* line 124, ../sass/screen.scss */
+.memberslist li {
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/* line 128, ../sass/screen.scss */
+.memberslist .role {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  opacity: 0;
+  -moz-transition: 0.7s all;
+}
+/* line 135, ../sass/screen.scss */
+.memberslist li:hover .role {
+  opacity: 1;
+}
+
+/* line 140, ../sass/screen.scss */
+.memberdescription {
+  color: white;
+  text-align: left;
 }
