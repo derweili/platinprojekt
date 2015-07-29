@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Block background example</title>
+	<title>Platin Projekt</title>
 	<link href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -15,16 +15,16 @@
 <!-- Easy as hell -->
 <nav class="topnav">
 	<ul>
-		<li><a href="">Home</a></li>
-		<li><a href="">Songs</a></li>
-		<li><a href="">Wettbewerbe</a></li>
+		<li><a href="#block">Home</a></li>
+		<li><a href="#live">Live</a></li>
+		<li><a href="#members">Wir</a></li>
 		<li><a href="">Kontakt</a></li>
 		<li><a href="">Veranstalter Infos</a></li>
 	</ul>
 </nav>
-<div id="block" style="width: 100%; height: 100vh;" data-vide-bg="assets/video/bg-video-maske" data-vide-options="position: 0% 50%"></div>
+<div id="block" style="width: 100%; height: 100vh;" data-vide-bg="assets/video/bg-video-maske" data-vide-options="position: 50% 50%"></div>
 
-<div class="veranstaltungen">
+<div class="veranstaltungen" id="live">
 	<div class="pure-g">
 		<div class="pure-u-md-1">
 			<h2>Kommende Veranstaltungen</h2>
@@ -35,17 +35,17 @@
 					<th>Adresse</th>
 					<th>Datum</th>
 				</tr>
-				<tr>
-					<td>Sommerfest PH</td>
-					<td>Heidelberg</td>
+				<tr itemscope itemtype="http://schema.org/Event">
+					<td itemprop="name">Sommerfest PH</td>
+					<td itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" ><span  itemprop="addressLocality">Heidelberg</span></span></td>
 					<td>Pädagogische Hochschule</td>
-					<td>31.07.2015</td>
+					<td itemprop="startDate" content="2015-07-31">31.07.2015</td>
 				</tr>
-				<tr>
-					<td>Cup 'n' Roll</td>
-					<td>Wiesloch</td>
+				<tr itemscope itemtype="http://schema.org/Event">
+					<td itemprop="name">Cup 'n' Roll</td>
+					<td itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" ><span  itemprop="addressLocality">Wiesloch</span></span></td>
 					<td>Geländer der Boulefreunde, am Freibad</td>
-					<td>01.08.2015</td>
+					<td itemprop="startDate" content="2015-08-01">01.08.2015</td>
 				</tr>
 			</table>
 
@@ -120,10 +120,10 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="pure-u-md-2-3 memberdescription">
+		<!--<div class="pure-u-md-2-3 memberdescription">
 			<h2>Maren Abele</h2>
 			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no</p>
-		</div>
+		</div>-->
 
 	</div>
 </div>
@@ -131,7 +131,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
 <script src="bower_components/vide/dist/jquery.vide.js"></script>
-<script>
+<script >
 //  $(document).ready(function () {
 //    $('#block').vide('video/ocean'); // Non declarative initialization
 //
@@ -148,25 +148,6 @@
 //  });
 </script>
 
-<script>
-	$( "#marennav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack fabi weili");
-	  $( "#members" ).addClass("maren");
-	});
-	$( "#hessinav" ).click(function() {
-	  $( "#members" ).removeClass("fabi maren weili jack weili");
-	  $( "#members" ).addClass("hessi");
-	});
-	$( "#weilinav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack fabi maren");
-	  $( "#members" ).addClass("weili");
-	});
-	$( "#fabinav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack maren weili");
-	  $( "#members" ).addClass("fabi");
-	});
-
-
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

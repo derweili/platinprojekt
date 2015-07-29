@@ -20,21 +20,30 @@ html, body {
 	top: 0;
 	left: 0;
 	width: 100%;
-    //background: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    li{
-    	display: inline;
-    	list-style: none;
-    	text-align: center;
-   		font-weight: normal;
-   		padding: 0 2rem;
-    	a{
-    		color: white;
-    		text-decoration: none;
-    	}
-    }
+  -moz-transition: 0.7s background-color;
+  -webkit-transition: 0.7s background-color;
+  -ms-transition: 0.7s background-color;
+  transition: 0.7s background-color;
+  //background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 9;
+  li{
+  	display: inline;
+  	list-style: none;
+  	text-align: center;
+  		font-weight: normal;
+  		padding: 0 2rem;
+  	a{
+  		color: white;
+  		text-decoration: none;
+  	}
+  }
+
+}
+.topnav.sticky{
+  background-color: #1a1a1a;
 }
 
 
@@ -96,6 +105,7 @@ html, body {
 #members{
   height: 60vh;
   padding: 20vh 0;
+  background-color: black;
   background-size: cover;
   -webkit-transition: background-image 0.7s ease-in-out;
   transition: background-image 0.7ss ease-in-out;
