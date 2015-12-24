@@ -1,18 +1,18 @@
 $( document ).ready(function() {
 	$( "#marennav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack fabi weili");
+	  $( "#members" ).removeClass("hessi fabi jack fabi weili band");
 	  $( "#members" ).addClass("maren");
 	});
 	$( "#hessinav" ).click(function() {
-	  $( "#members" ).removeClass("fabi maren weili jack weili");
+	  $( "#members" ).removeClass("fabi maren weili jack weili band");
 	  $( "#members" ).addClass("hessi");
 	});
 	$( "#weilinav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack fabi maren");
+	  $( "#members" ).removeClass("hessi fabi jack fabi maren band");
 	  $( "#members" ).addClass("weili");
 	});
 	$( "#fabinav" ).click(function() {
-	  $( "#members" ).removeClass("hessi fabi jack maren weili");
+	  $( "#members" ).removeClass("hessi fabi jack maren weili band");
 	  $( "#members" ).addClass("fabi");
 	});
 	var scrollPos = $(document).scrollTop();
@@ -29,8 +29,10 @@ $( document ).ready(function() {
 		console.log(scrollPos);
 		if ( scrollPos > 1 ) {
 			$( ".topnav" ).addClass( "sticky" );
+			$( ".scrolldownarrow" ).addClass( "invisible" );
 		}else{
 			$( ".topnav" ).removeClass( "sticky" );
+			$( ".scrolldownarrow" ).removeClass( "invisible" );
 		};
 	});
 

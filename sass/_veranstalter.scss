@@ -1,0 +1,23 @@
+.songlist{
+		padding-left: 0;
+		list-style: none;
+
+
+	li{
+		a{
+			text-decoration: none;
+		}
+	}
+}
+.veranstalterseite, .kontaktmessage{
+	background: none #1a1a1a;
+	h1{
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 1.5em;
+		font-size: rem-calc(28px);
+	}
+	h2{
+		text-align: left;
+	}
+}

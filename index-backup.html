@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Platin Projekt</title>
+	<!--<link href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />;
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+   	<!--[if IE]>
+  	<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!-- Microformats schema.org from https://schema.org/Event 
+	Hier testen: https://developers.google.com/structured-data/testing-tool/
+	-->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "MusicGroup",
+		  "event": [
+		    {
+		    "@type": "Event",
+			"location": {
+			    "@type": "Place",
+			    "address": {
+			    	"@type": "PostalAddress",
+			    	"addressLocality": "Heidelberg",
+			    	"addressRegion": "BW",
+			    	"postalCode": "69121",
+			    	"streetAddress": "Tiergartenstraße 13"
+			    },
+				"name": "Schwimmbadclub"
+			},
+		    "offers": {
+			    "@type": "Offer",
+			    "price": "9.00",
+			    "priceCurrency": "EURO",
+			    "url": "http://facebook.com/platinprojektband/"
+			  },
+		      "startDate": "2015-11-27",
+		      "url": "https://www.facebook.com/events/1483174758671420/",
+		      "Name": "Emergenza"
+		    }/* ","" ---- Komma wenn mehrere Events angefügt werden --- /*
+		    /*
+ 			----- Mehrere Events möglich -------
+		    {
+			"@type": "Event",
+				"location": {
+				   	"@type": "Place",
+				   	"address": {
+				    	"@type": "PostalAddress",
+				    	"addressLocality": "Heidelberg",
+				    	"addressRegion": "BW",
+				    	"postalCode": "69121",
+				    	"streetAddress": "Tiergartenstraße 13"
+			    	},
+			    	"name": "Schwimmbadclub"
+			 	},
+		     	"offers": "facebook.com/platinprojektband",
+		    	"startDate": "2015-11-27",
+		    	"url": "https://www.facebook.com/events/1483174758671420/"
+		    }*/
+		  ],
+		  "image": [
+		    "Platin-Projekt-01.jpg",
+		    "Platin-Projekt-02.jpg",
+		    "Platin-Projekt-03.jpg"
+		  ],
+		  /*"interactionStatistic: {
+		    "@type": "InteractionCounter",
+		    "interactionType": "http://schema.org/CommentAction",
+		    "userInteractionCount": "18",
+		  },*/
+		  "name": "Platin Projekt" /* ","" ---- Komma wenn Tracks angefügt werden --- /*
+		  /*"track": [
+		    {
+		      "@type": "MusicRecording",
+		      "audio": "foo-fighters-rope-play.html",
+		      "duration": "PT4M5S",
+		      "inAlbum": "foo-fighters-wasting-light.html",
+		      "interactionStatistic: {
+		        "@type": "InteractionCounter",
+		        "interactionType": "http://schema.org/ListenAction",
+		        "userInteractionCount": "14300",
+		      }
+		    },
+		      "name": "Rope",
+		      "offers": "foo-fighters-rope-buy.html",
+		      "url": "foo-fighters-rope.html"
+		    },
+		    {
+		      "@type": "MusicRecording",
+		      "audio": "foo-fighters-everlong-play.html",
+		      "duration": "PT6M33S",
+		      "inAlbum": "foo-fighters-color-and-shape.html",
+		      "name": "Everlong",
+		      "interactionStatistic: {
+		        "@type": "InteractionCounter",
+		        "interactionType": "http://schema.org/ListenAction",
+		        "userInteractionCount": "11700",
+		      },
+		      "offers": "foo-fighters-everlong-buy.html",
+		      "url": "foo-fighters-everlong.html"
+		    }
+		  ],
+		  "video": {
+		    "@type": "VideoObject",
+		    "description": "Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.",
+		    "duration": "T1M33S",
+		    "name": "Interview with the Foo Fighters",
+		    "thumbnail": "foo-fighters-interview-thumb.jpg"
+		  }*/
+		}
+		</script>
+</head>
+<body>
+
+<!-- Easy as hell -->
+<nav class="topnav">
+	<ul>
+		<li><a href="#block"><h1 style="display:inline;">Platin Projekt</h1></a></li>
+		<li><a href="#live">Live</a></li>
+		<li><a href="#members">Wir</a></li>
+		<li><a href="#kontakt">Kontakt</a></li>
+		<li><a href="">Veranstalter Infos</a></li>
+	</ul>
+</nav>
+<div id="block" style="width: 100%; height: 100vh;" data-vide-bg="assets/video/bg-video-maske" data-vide-options="position: 50% 50%"></div>
+
+<div class="veranstaltungen darksection" id="live">
+	<div class="row">
+		<div class="small-12 columns">
+			<h2>Kommende Veranstaltungen</h2>
+			<div class="upcomingeventscontainer">
+				<table>
+					<tr>
+						<th>Veranstaltung</th>
+						<th>Ort</th>
+						<th>Location</th>
+						<th>Datum</th>
+						<th>Tickets</th>
+					</tr>
+					<tr>
+						<td>Emergenza</td>
+						<td>Heidelberg</td>
+						<td>Schwimmbadclub</td>
+						<td>27.11.2015</td>
+						<td><a href="#kontakt">9€</a></td>
+					</tr>
+				</table>	
+			</div>
+
+			<h2 style="margin-top:2rem;" class="pastevent">Vergangene Veranstaltungen</h2>
+			<div class="pasteventcontainer">
+				<table class="pastevent">
+					<tr>
+						<th>Veranstaltung</th>
+						<th>Ort</th>
+						<th>Location</th>
+						<th>Datum</th>
+					</tr>
+					<tr>
+						<td>Sommerfest PH</td>
+						<td><span><span>Heidelberg</span></span></td>
+						<td>Pädagogische Hochschule</td>
+						<td>31.07.2015</td>
+					</tr>
+					<tr>
+						<td>Cup 'n' Roll</td>
+						<td>Wiesloch</td>
+						<td>Geländer der Boulefreunde, am Freibad</td>
+						<td>01.08.2015</td>
+					</tr>
+					<tr>
+						<td>Stadtfest Sinsheim</td>
+						<td>Sinsheim</td>
+						<td>Bühne in der Allee</td>
+						<td>18.07.2015</td>
+					</tr>
+					<tr>
+						<td>Dorffest</td>
+						<td>Sinsheim-Rohrbach</td>
+						<td>Bühne der Pfadfinder</td>
+						<td>11.07.2015</td>
+					</tr>
+					<tr>
+						<td>Freibadfest</td>
+						<td>Sinsheim</td>
+						<td>Freibad</td>
+						<td>27.06.2015</td>
+					</tr>
+					<tr>
+						<td>Dorffest Hoffenheim</td>
+						<td>Sinsheim-Hoffenheim</td>
+						<td>Dorffest - Bühne</td>
+						<td>20.06.2015</td>
+					</tr>
+					<tr>
+						<td>Live 4 Life</td>
+						<td>Sinsheim</td>
+						<td>Live 4 Live</td>
+						<td>13.06.2015</td>
+					</tr>
+					<tr>
+						<td>Treffen Junge Musik-Szene</td>
+						<td>Berlin</td>
+						<td>Haus der Berliner Festspiele</td>
+						<td>06.11.2014</td>
+					</tr>
+				</table>
+			</div><!-- Past Event Container -->
+			<button class="viewall" style="">Alle Anschauen</button>
+			<button class="viewall hidden" style="">Weniger Anschauen</button>
+		</div>
+	</div>
+</div>
+
+<div id="members" class="band">
+	<div class="row">
+		<div class="small-4 columns end">
+			<nav class="memberslist">
+				<ul>
+					<li id="marennav">
+						Maren
+						<span class="role">Gesang, Piano</span>
+					</li>
+					<li id="hessinav">
+						Julian
+						<span class="role">Gitarre, Piano</span>
+					</li>
+					<li id="jacknav">
+						Jack
+						<span class="role">Gesang, Gitarre</span>
+					</li>
+					<li id="weilinav">
+						Julian
+						<span class="role">Bass</span>
+					</li>
+					<li id="fabinav">
+						Fabian
+						<span class="role">Drums</span>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!--<div class="pure-u-md-2-3 memberdescription">
+			<h2>Maren Abele</h2>
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no</p>
+		</div>-->
+
+	</div>
+</div>
+
+<div id="kontakt" class="darksection">
+	<div class="row">
+		<div class="small-12 large-8 large-offset-2 columns">
+			<h2>Kontakt</h2>
+			<form action="mail.php" method="post">
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<input type="text" name="Name" placeholder="Name">
+					</div>
+					<div class="small-12 medium-6 columns">
+						<input type="email" name="Email" placeholder="Email">
+					</div>
+					<div class="small-12 columns">
+						<textarea name="Nachricht" id="" cols="30" rows="10" placeholder="Nachricht/Ticketanfrage"></textarea>	
+						<input type="submit" class="button" style="color:black;">
+					</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="bower_components/vide/dist/jquery.vide.js"></script>
+<script >
+//  $(document).ready(function () {
+//    $('#block').vide('video/ocean'); // Non declarative initialization
+//
+//    var instance = $('#block').data('vide'); // Get the instance
+//    var video = instance.getVideoObject(); // Get the video object
+//    instance.destroy(); // Destroy instance
+//
+//    $('#block2').vide({
+//      'mp4': 'video/ocean',
+//      'webm': 'video/ocean',
+//      'ogv': 'video/ocean',
+//      'poster': 'video/ocean',
+//    });
+//  });
+</script>
+
+<script src="js/scripts.js"></script>
+
+<script type="text/javascript">
+	$(".viewall").click(function(){
+		$(".pasteventcontainer").toggleClass("allevents");	
+		$(".viewall").toggleClass("hidden");	
+	})
+</script>
+</body>
+</html>

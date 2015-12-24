@@ -3,17 +3,91 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+//@import "compass/reset";
 
+@import 'custom-settings';
+@import '../bower_components/foundation/scss/foundation/components/grid';
+/*@import '../bower_components/foundation/scss/foundation/components/accordion';
+@import '../bower_components/foundation/scss/foundation/components/alert-boxes';
+@import '../bower_components/foundation/scss/foundation/components/block-grid';
+@import '../bower_components/foundation/scss/foundation/components/breadcrumbs';
+@import '../bower_components/foundation/scss/foundation/components/button-groups';*/
+@import '../bower_components/foundation/scss/foundation/components/buttons';
+/*
+@import '../bower_components/foundation/scss/foundation/components/clearing';
+@import '../bower_components/foundation/scss/foundation/components/dropdown';
+@import '../bower_components/foundation/scss/foundation/components/dropdown-buttons';
+@import '../bower_components/foundation/scss/foundation/components/flex-video';*/
+@import '../bower_components/foundation/scss/foundation/components/forms';
+/*
+@import '../bower_components/foundation/scss/foundation/components/icon-bar';
+@import '../bower_components/foundation/scss/foundation/components/inline-lists';
+@import '../bower_components/foundation/scss/foundation/components/joyride';
+@import '../bower_components/foundation/scss/foundation/components/keystrokes';
+@import '../bower_components/foundation/scss/foundation/components/labels';
+@import '../bower_components/foundation/scss/foundation/components/magellan';
+@import '../bower_components/foundation/scss/foundation/components/orbit';
+@import '../bower_components/foundation/scss/foundation/components/pagination';
+@import '../bower_components/foundation/scss/foundation/components/panels';
+@import '../bower_components/foundation/scss/foundation/components/pricing-tables';
+@import '../bower_components/foundation/scss/foundation/components/progress-bars';
+@import '../bower_components/foundation/scss/foundation/components/range-slider';
+@import '../bower_components/foundation/scss/foundation/components/reveal';
+@import '../bower_components/foundation/scss/foundation/components/side-nav';
+@import '../bower_components/foundation/scss/foundation/components/split-buttons';
+@import '../bower_components/foundation/scss/foundation/components/sub-nav';
+@import '../bower_components/foundation/scss/foundation/components/switches';
+@import '../bower_components/foundation/scss/foundation/components/tables';
+@import '../bower_components/foundation/scss/foundation/components/tabs';
+@import '../bower_components/foundation/scss/foundation/components/thumbs';
+@import '../bower_components/foundation/scss/foundation/components/tooltips';
+@import '../bower_components/foundation/scss/foundation/components/top-bar';
+@import '../bower_components/foundation/scss/foundation/components/type';
+@import '../bower_components/foundation/scss/foundation/components/offcanvas';*/
+@import '../bower_components/foundation/scss/foundation/components/visibility';
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html, body {
   margin: 0;
   font-family: 'Open Sans', Arial;
+  /*width: 100%;
+  overflow: hidden;*/
 }
 .divider{
-    background: #1a1a1a;
+    background: $secondary-color;
     height: 20vh;
 }
 
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+h2 {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+body{
+    background-image: url(../assets/img/band-gesamt-1500.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #1a1a1a;
+}
+
+.darksection{
+    background: #1a1a1a;
+    padding: 70px 0;
+    color: white;
+    *{
+      color: white;
+    }
+}
 
 .topnav{
 	position: fixed;
@@ -33,12 +107,17 @@ html, body {
   	display: inline;
   	list-style: none;
   	text-align: center;
-  		font-weight: normal;
-  		padding: 0 2rem;
+		font-weight: normal;
+		padding: 0 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
   	a{
   		color: white;
   		text-decoration: none;
   	}
+  }
+  ul{
+    padding-left: 0;
   }
 
 }
@@ -46,37 +125,19 @@ html, body {
   background-color: #1a1a1a;
 }
 
-
-
-
-
-.pure-g{
-	width: 95%;
-	max-width: 1000px;
-	margin: 0 auto;
-  overflow: hidden;
-}
-.pure-g > *{
-  float: left;
+.scrolldownarrow{
+  position: absolute;
+  bottom: 10px!important;
+  left: 50%;
+  width: 50px;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  transition: 0.5s all;
+  &.invisible{
+    opacity: 0;
+  }
 }
 
 .veranstaltungen{
-    background: #1a1a1a;
-    padding: 70px 0;
-    *{
-    	color: white;
-    }
-    h2 {
-    font-size: 18px;
-    font-family: "Open Sans";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.333;
-    text-align: center;
-    margin: 0;
-  }
-
 	table *{
     text-transform: uppercase;
 		border: none;
@@ -87,6 +148,8 @@ html, body {
 		width: 100%;
 		th{
 			font-weight: bold;
+      text-align: left;
+      
 		}
 		th, td{
 			padding: 10px;
@@ -95,23 +158,54 @@ html, body {
 	}
   .pastevent{
     opacity: 0.6;
+
     td{
       text-decoration: line-through;
     }
   }
 }
+.upcomingeventscontainer{
+  width: 100%;
+  overflow: scroll;
+}
+.pasteventcontainer{
+  height: 100%;
+  max-height: 180px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -moz-transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+.pasteventcontainer.allevents{
+  max-height: 1000vh;
+}
 
+button{
+  color: white;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  margin-top: 30px;
+  text-align: center;
+  display:block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
 
+.hidden{
+  display: none;
+}
 #members{
-  height: 60vh;
+  height: 90vh;
   padding: 20vh 0;
   background-color: black;
   background-size: cover;
   -webkit-transition: background-image 0.7s ease-in-out;
   transition: background-image 0.7ss ease-in-out;
-  .pure-g{
-    max-width: 800px;
-  }
+
 }
 
 #members.fabi{
@@ -126,14 +220,19 @@ html, body {
 #members.weili{
   background-image: url(../assets/img/weili.jpg);
 }
+#members.band{
+  background-image: url(../assets/img/band-gesamt-1500.jpg);
+}
 
 .memberslist{
   font-size: 1rem;
   line-height: 1em;
   color: white;
+  padding-left: 0;
   li{
     cursor: pointer;
     margin-bottom: 30px;
+    list-style: none;
   }
   .role{
     font-size: 10px;
@@ -151,3 +250,54 @@ html, body {
   color: white;
   text-align: left;
 }
+
+
+
+@media #{$small-only} {
+  .topnav{
+    position: relative;
+    background-color: #1a1a1a;
+  }
+  .memberslist li{
+    display: inline;
+  }
+  .topnav li{
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  video{
+    display: none;
+  }
+  #members{
+    background-position: center;
+  }
+  body, #members.band{
+    background-image: url(../assets/img/band-gesamt-1500.jpg);
+  }
+}
+@media #{$medium-only} {
+  .topnav li{
+  font-size: 0.5em!important;
+  padding: 0 1rem;
+  }
+
+}
+
+
+textarea{
+  color: rgba(0,0,0,0.75)!important;
+}
+
+
+.touchevents{
+  #block{
+  display: none!important;
+  }
+  .touchfallbackimage{
+    display: block!important;
+  }
+}
+
+
+@import "veranstalter"; 
