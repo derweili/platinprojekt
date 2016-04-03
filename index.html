@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Platin Projekt</title>
+	<title>The Project</title>
 	<!--<link href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -33,11 +33,11 @@
 			},
 		    "offers": {
 			    "@type": "Offer",
-			    "price": "9.00",
+			    "price": "12.00",
 			    "priceCurrency": "EURO",
-			    "url": "http://facebook.com/platinprojektband/"
+			    "url": "https://www.facebook.com/TheProject-1484070775157304/"
 			  },
-		      "startDate": "2015-05-04",
+		      "startDate": "2015-05-05",
 		      "url": "https://www.http://www.emergenza.net/DE/de-de/gig/739/16443/mi-4-mai.aspx20/",
 		      "Name": "Emergenza Semifinale"
 		    }
@@ -47,7 +47,7 @@
 		    "Platin-Projekt-02.jpg",
 		    "Platin-Projekt-03.jpg"
 		  ],
-		  "name": "Platin Projekt"
+		  "name": "The Project"
 		}
 		</script>
 </head>
@@ -56,17 +56,54 @@
 <!-- Easy as hell -->
 <nav class="topnav">
 	<ul>
-		<li><a href="#block"><h1 style="display:inline;">Platin Projekt</h1></a></li>
+		<li><a href="#block"><h1 style="display:inline;">The Projekt</h1></a></li>
+		<li><a href="#video">Video</a></li>
 		<li><a href="#live">Live</a></li>
-		<li><a href="#members">Wir</a></li>
+		<li><a href="#bilder">Bilder</a></li>
 		<li><a href="#kontakt">Kontakt</a></li>
 		<li><a href="veranstalter.html">Veranstalter Infos</a></li>
 	</ul>
 </nav>
-<div class="show-for-medium-up" id="block" style="width: 100%; height: 100vh;" data-vide-bg="assets/video/bg-video-maske" data-vide-options="position: 50% 50%">
-<a class="" href="#live"><img src="assets/arrow.svg" alt="" class="scrolldownarrow"></a>
+
+
+<div class="albumteaser">
+	<div class="row">
+		<div class="columns medium-4 medium-offset-2">
+			<img src="/assets/img/ep-cover.jpg" alt="Tonight EP" id="cover">
+		</div>
+		<div class="columns medium-5">
+			<h2>Tonight EP</h2>
+			<ul>
+				<li>Tonight</li>
+				<li>Don't Let Go</li>
+				<li>Hurricane</li>
+			</ul>
+			<a href="" class="button">Jetzt kaufen</a>
+		</div>
+		<div class="columns small-12 storelogocontainer">
+			<img src="assets/img/google-play-badge.png" alt="" class="storelogo">
+			<img src="assets/img/itunes.svg" alt="" class="storelogo">
+			<img src="assets/img/amazon.png" alt="" class="storelogo">
+		</div>
+	</div>
+</div>
+
+<a class="" href="#video"><img src="assets/arrow.svg" alt="" class="scrolldownarrow"></a>
 </div>
 <img src="assets/img/band-gesamt-800.jpg" alt="Platin Projekt Bandportrait" title="Platin Projekt" class="show-for-small-only touchfallbackimage">
+
+<div class="video darksection" id="video">
+	<div class="row">
+		<div class="columns small-12">
+			<h2>Musikvideo - Not Over You</h2>
+		</div>
+		<div class="columns medium-8 medium-offset-2 end">
+			<div class="flex-video widescreen vimeo">
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/WiXcnUBgL7c?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="veranstaltungen darksection" id="live">
 	<div class="row">
@@ -79,14 +116,14 @@
 						<th>Ort</th>
 						<th>Location</th>
 						<th>Datum</th>
-						<!--<th>Tickets</th>-->
+						<th>Tickets</th>
 					</tr>
 					<tr>
 						<td>Emergenza</td>
 						<td>Mannheim</td>
 						<td>7er Club</td>
-						<td>Mai 2016</td>
-						<!--<td><a href="#kontakt">9€</a></td>-->
+						<td>05.05.2016</td>
+						<td><a href="#kontakt">12€</a></td>
 					</tr>
 				</table>	
 			</div>
@@ -230,7 +267,7 @@
 					</div>
 					<div class="small-12 columns">
 						<textarea name="Nachricht" id="" cols="30" rows="10" placeholder="Nachricht"></textarea>	
-						<input type="submit" class="button" style="color:black;">
+						<input type="submit" class="button expand" style="color:black;">
 					</div>
 
 			</form>
@@ -238,19 +275,14 @@
 	</div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="bower_components/vide/dist/jquery.vide.js"></script>
 
 
 <script src="js/scripts.js"></script>
 <script src="js/modernizr.js"></script>
 
-<script type="text/javascript">
-	$(".viewall").click(function(){
-		$(".pasteventcontainer").toggleClass("allevents");	
-		$(".viewall").toggleClass("hidden");	
-	})
-</script>
+
 </body>
 </html>

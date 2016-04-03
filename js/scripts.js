@@ -16,7 +16,6 @@ $( document ).ready(function() {
 	  $( "#members" ).addClass("fabi");
 	});
 	var scrollPos = $(document).scrollTop();
-		console.log(scrollPos);
 	if ( scrollPos > 1 ) {
 		$( ".topnav" ).addClass( "sticky" );
 	}else{
@@ -26,7 +25,6 @@ $( document ).ready(function() {
 
 	$( window ).scroll(function() {
 		var scrollPos = $(document).scrollTop();
-		console.log(scrollPos);
 		if ( scrollPos > 1 ) {
 			$( ".topnav" ).addClass( "sticky" );
 			$( ".scrolldownarrow" ).addClass( "invisible" );
