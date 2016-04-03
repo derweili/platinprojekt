@@ -16,8 +16,8 @@
 /*
 @import '../bower_components/foundation/scss/foundation/components/clearing';
 @import '../bower_components/foundation/scss/foundation/components/dropdown';
-@import '../bower_components/foundation/scss/foundation/components/dropdown-buttons';
-@import '../bower_components/foundation/scss/foundation/components/flex-video';*/
+@import '../bower_components/foundation/scss/foundation/components/dropdown-buttons';*/
+@import '../bower_components/foundation/scss/foundation/components/flex-video';
 @import '../bower_components/foundation/scss/foundation/components/forms';
 /*
 @import '../bower_components/foundation/scss/foundation/components/icon-bar';
@@ -130,6 +130,7 @@ body{
   bottom: 10px!important;
   left: 50%;
   width: 50px;
+  -moz-transform: translateX(-50%) rotate(-90deg);
   -webkit-transform: translateX(-50%) rotate(-90deg);
   transition: 0.5s all;
   &.invisible{
